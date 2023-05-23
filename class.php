@@ -30,6 +30,7 @@ class Category extends Product {
 };
 
 class Food extends Category {
+  public static $type = 'food';
   public $food_type;
   public $wheight;
 
@@ -40,6 +41,7 @@ class Food extends Category {
 };
 
 class Game extends Category {
+  public static $type = 'game';
   public $game_type;
 
   public function __construct($_marca, $_prezzo, $_category, $_game_type){
@@ -49,6 +51,7 @@ class Game extends Category {
 };
 
 class Sit extends Category {
+  public static $type = 'sit';
   public $sit_type;
 
   public function __construct($_marca, $_prezzo, $_category, $_sit_type){

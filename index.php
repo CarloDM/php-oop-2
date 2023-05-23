@@ -26,6 +26,7 @@ include_once __DIR__ . "/server.php";
         <h5 class="card-title"><?php echo $prod->name  ?></h5>
         <p class="card-text"><?php echo $prod->price  ?>€</p>
         <p class="card-text"><?php echo $prod->category  ?></p>
+        <p class="card-text"><?php echo $prod::$type  ?></p>
         <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
         </div>
       </div>

@@ -15,11 +15,12 @@ $test_product4->brand = 'Dog Best Friends';
 
 var_dump($test_product);
 var_dump($test_product2);
-var_dump($test_product3);
+var_dump($test_product3 ,$test_product3::$type);
 
 $my_products = [
   $test_product3,$test_product4
 ];
 
-var_dump(property_exists($test_product4, 'game_type'));
+var_dump(property_exists($test_product4, 'Game'));
+
 ?>
