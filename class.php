@@ -18,8 +18,6 @@ public function __construct($_name, $_price){
   $this->name = $_name;
   $this->price = $_price;
 }
-
-
 };
 
 class Category extends Product {
@@ -32,12 +30,12 @@ class Category extends Product {
 };
 
 class Food extends Category {
-  public $type;
+  public $food_type;
   public $wheight;
 
-  public function __construct($_marca, $_prezzo, $_category, $_type){
+  public function __construct($_marca, $_prezzo, $_category, $_food_type){
     parent::__construct($_marca, $_prezzo, $_category);
-    $this->type = $_type;
+    $this->food_type = $_food_type;
   }
 };
 

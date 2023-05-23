@@ -19,14 +19,17 @@ include_once __DIR__ . "/server.php";
   <div class="mainwrapper">
     <div class="container mt-5">
 
+      <?php foreach ($my_products as $prod) : ?>
       <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
         <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <h5 class="card-title"><?php echo $prod->name  ?></h5>
+        <p class="card-text"><?php echo $prod->price  ?>€</p>
+        <p class="card-text"><?php echo $prod->category  ?></p>
+        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
         </div>
       </div>
+      <?php endforeach ?>
 
     </div>
   </div>
