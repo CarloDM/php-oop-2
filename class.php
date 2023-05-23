@@ -42,11 +42,21 @@ class Food extends Category {
 };
 
 class Game extends Category {
+  public $game_type;
 
+  public function __construct($_marca, $_prezzo, $_category, $_game_type){
+    parent::__construct($_marca, $_prezzo, $_category);
+    $this->game_type = $_game_type;
+  }
 };
 
 class Sit extends Category {
+  public $sit_type;
 
+  public function __construct($_marca, $_prezzo, $_category, $_sit_type){
+    parent::__construct($_marca, $_prezzo, $_category);
+    $this->sit_type = $_sit_type;
+  }
 };
 
 
